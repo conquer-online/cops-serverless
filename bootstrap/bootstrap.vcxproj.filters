@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="bootstrap.cpp" />
+    <ClCompile Include="injectors\ldrloaddll_stub.cpp">
+      <Filter>injectors</Filter>
+    </ClCompile>
+    <ClCompile Include="injectors\loadlibrary_default.cpp">
+      <Filter>injectors</Filter>
+    </ClCompile>
+    <ClCompile Include="injectors\loadlibrary_stub.cpp">
+      <Filter>injectors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="injectors">
+      <UniqueIdentifier>{e32bd79c-3957-4aa9-a83a-65cdf254d62c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="injectors\injectors.h">
+      <Filter>injectors</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
